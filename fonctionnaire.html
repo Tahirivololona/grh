@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ministère de l'Energie de l'Eau et de l'Hydrocarbure </title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+
+    <body class="fixed-sn light-blue-skin">
+
+        <!--Double navigation-->
+        <header>
+            <!-- Sidebar navigation -->
+            <div id="slide-out" class="side-nav aqua-gradient sn-bg-4 fixed">
+                <ul class="custom-scrollbar">
+                    <!-- Logo -->
+                    <li>
+                        <div class="logo-wrapper waves-light">
+                            <a href="#"><img src="img/logo.png" class="img-fluid flex-center"></a>
+                        </div>
+                    </li>
+                    <!--/. Logo -->
+                    <!--/.Search Form-->
+                    <!-- Side navigation links -->
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li class="my-3"><a href="fonctionnaire.html" class=""><i class="lnr lnr-printer fa-2x"></i> <span class="ml-2">Ajout nouveau personnel</span></a></li>
+                            <li class="my-3"><a href="avancementfonctionnaire.html" class=""><i class="lnr lnr-printer fa-2x"></i> <span class="ml-2">Avancement</span></a></li>
+                            <li class="my-3"><a href="integrationfonctionnaire.html" class=""><i class="lnr lnr-file-add fa-2x"></i> <span class="ml-2">Integration</span></a></li>
+                            <li class="my-3"><a href="elements.html" class=""><i class="lnr lnr-graduation-hat fa-2x"></i> <span class="ml-2">Titularisation</span></a></li>
+                            <li class="my-3"><a href="elements.html" class=""><i class="lnr lnr-list fa-2x"></i> <span class="ml-2"> Bonification</span></a></li>
+                            <li class="my-3"><a href="elements.html" class=""><i class="lnr lnr-map-marker fa-2x"></i> <span class="ml-2">retraite</span></a></li>
+                            <li class="my-3"><a href="fonctionnaireliste.html" class=""><i class="lnr lnr-list fa-2x"></i> <span class="ml-2"> Listes des personnels</span></a></li>
+                        </ul>
+                    </li>
+                    <!--/. Side navigation links -->
+                </ul>
+                <div class="sidenav-bg mask-strong"></div>
+            </div>
+            <!--/. Sidebar navigation -->
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar aqua-gradient double-nav">
+                <!-- SideNav slide-out button -->
+                <div class="float-left">
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+                </div>
+                <ul class="nav navbar-nav nav-flex-icons w-100">
+                    <li class="nav-item ml-2">
+                        <a class="nav-link" href="accueil.html"><i class="fas fa-home"></i> <span class="clearfix d-none d-sm-inline-block">Accueil</span></a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="administration.html"><i class="fas fa-users-cog"></i> <span class="clearfix d-none d-sm-inline-block">Administration</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-star"></i> Status
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="ecd.html">ECD</a>
+                            <a class="dropdown-item" href="efa.html">EFA</a>
+                            <a class="dropdown-item" href="fonctionnaire.html">Fonctionnaire</a>
+                            <a class="dropdown-item" href="hee.html">H.E.E</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="absenceconge.html"><i class="fas fa-book"></i> <span class="clearfix d-none d-sm-inline-block">Gestionnaire d'absence</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parametrage.html"><i class="fa fa-cog"></i> <span class="clearfix d-none d-sm-inline-block">Paramétrage</span></a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="aide"><i class="far fa-question-circle"></i> <span class="clearfix d-none d-sm-inline-block">Aide</span></a>
+                    </li>
+                    <li class="nav-item dropdown avatar ml-2">
+                        <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0" alt="avatar image" height="35">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Mon profil</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.Navbar -->
+        </header>
+        <!--/.Double navigation-->
+
+        <!--Main Layout-->
+        <main>
+            <div class="card mb-5">
+                <div class="card-header">
+                    Nommination sur titre
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-md-0 mb-5">
+                            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Nom</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="last_name" name="last_name" class="form-control">
+                                            <label for="last_name" class="">Prénom</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form">
+                                            <i class="fas fa-calendar-times prefix grey-text"></i>
+                                            <input placeholder="Selectionner la date" type="text" id="date-picker-example" class="form-control datepicker">
+                                            <label for="date-picker-example">Date de naissance</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="lieudenaissance" name="last_name" class="form-control">
+                                            <label for="lieudenaissance" class="">Lieu de naissance</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <div class="col-md-4 ">
+                                        <select class="mdb-select md-form" searchable="Rechercher Ici">
+                                            <option value="" disabled selected>Sexe</option>
+                                            <option value="1">Homme</option>
+                                            <option value="2">Femme</option>
+                                            
+                                    </select>
+                                        <label class="mdb-main-label"> <i class="fas fa-venus-mars prefix grey-text mr-2"></i>  Ville</label>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-id-card prefix grey-text"></i>
+                                            <input type="text" id="cin" name="cin" class="form-control">
+                                            <label for="cin" class="">CIN</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form">
+                                            <i class="fas fa-calendar-times prefix grey-text"></i>
+                                            <input placeholder="Selectionner la date" type="text" id="date-picker-example" class="form-control datepicker">
+                                            <label for="date-picker-example">Du</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-id-card prefix grey-text"></i>
+                                            <input type="text" id="fait" name="fait" class="form-control">
+                                            <label for="fait" class="">Fait à</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-id-card prefix grey-text"></i>
+                                            <input type="text" id="cinduplicata" name="cinduplicata" class="form-control">
+                                            <label for="cinduplicata" class="">Duplicata CIN</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form">
+                                            <i class="fas fa-calendar-times prefix grey-text"></i>
+                                            <input placeholder="Selectionner la date" type="text" id="date-picker-example" class="form-control datepicker">
+                                            <label for="date-picker-example">Du</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-id-card prefix grey-text"></i>
+                                            <input type="text" id="faitdupli" name="faitdupli" class="form-control">
+                                            <label for="faitdupli" class="">Fait à</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-user-graduate prefix grey-text"></i>
+                                            <input type="text" id="diplome" name="diplome" class="form-control">
+                                            <label for="diplome" class="">Diplôme</label>
+                                        </div>
+                                    </div>
+
+                                   <!--Grid column-->
+                                   <div class="col-md-4">
+                                    <select class="mdb-select md-form" searchable="Rechercher Ici">
+                                        <option value="" disabled selected>Catégorie</option>
+                                        <option value="1">I</option>
+                                        <option value="2">II</option>
+                                        <option value="3">III</option>
+                                        <option value="3">IV</option>
+                                        <option value="3">V</option>
+                                        <option value="3">VI</option>
+                                        <option value="3">VII</option>
+                                        <option value="3">VIII</option>
+                                        <option value="3">IX</option>
+                                        <option value="3">X</option>
+                                    </select>
+                                    <label class="mdb-main-label">  <i class="fas fa-graduation-cap prefix grey-text"></i>Catégorie</label>
+                                </div>
+                                <!--Grid column-->
+
+
+                                    <!--Grid column-->
+                                   
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <select class="mdb-select md-form" searchable="Rechercher Ici">
+                                            <option value="" disabled selected>Classe</option>
+                                            <option value="1">P</option>
+                                            <option value="2">1 er</option>
+                                            <option value="3">2 ème</option>
+                                            <option value="3">Stagiaire</option>
+                                        </select>
+                                        <label class="mdb-main-label"> <i class="fas fa-graduation-cap prefix grey-text mr-2"> </i>Classe</label>
+                                    </div>
+                                    <!--Grid column-->
+
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <select class="mdb-select md-form" searchable="Rechercher Ici">
+                                            <option value="" disabled selected>Echelon</option>
+                                            <option value="1">1 er</option>
+                                            <option value="2">2 ème</option>
+                                            <option value="3">3ème</option>
+                                            <option value="3">4ème</option>
+                                            
+                                        </select>
+                                        <label class="mdb-main-label"> <i class="fas fa-graduation-cap fa-lg prefix grey-text mr-2"> </i>Echelon</label>
+                                    </div>
+                                   
+                                    <!--Grid column-->
+                                </div>
+
+                                <!--Grid row-->
+                                <div class="row">
+                                   
+                                    <!--Grid column-->
+
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-briefcase prefix grey-text"></i>
+                                            <input type="text" id="matricule" name="matricule" class="form-control">
+                                            <label for="matricule" class="">Matricule</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            
+                                            <input type="text" id="indice" name="indice" class="form-control">
+                                            <label for="indice" class="">Indice</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    
+                                    <!--Grid column-->
+                                </div>
+
+
+
+
+
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-briefcase prefix grey-text mr-2"></i>
+                                            <input type="text" id="direction" name="direction" class="form-control">
+                                            <label for="direction" class="">Direction</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-city prefix grey-text mr-2"></i>
+                                            <input type="text" id="localite" name="localite" class="form-control">
+                                            <label for="localite" class="">Localité</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-briefcase prefix grey-text"></i>
+                                            <input type="text" id="fonction" name="fonction" class="form-control">
+                                            <label for="fonction" class="">Fonction</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+
+
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-file-contract prefix grey-text mr-2"></i>
+                                            <input type="text" id="numerocontrat" name="numerocontrat" class="form-control">
+                                            <label for="numerocontrat" class="">Numéro contrat</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="md-form">
+                                            <i class="fas fa-calendar-times prefix grey-text"></i>
+                                            <input placeholder="Selectionner la date" type="text" id="date-picker-example" class="form-control datepicker">
+                                            <label for="date-picker-example">Date contrat</label>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                            </form>
+                            <div class="text-center d-flex justify-content-end text-md-left">
+                                <a class="btn btn-primary btn-rounded" onclick="document.getElementById('contact-form').submit();">Confirmer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <!--Main Layout-->
+
+
+    </body>
+    <!-- Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+    </script>
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+        // Data Picker Initialization
+        $.extend($.fn.pickadate.defaults, {
+            monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+                'Novembre', 'Décembre'
+            ],
+            weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+            today: 'aujourd\'hui',
+            clear: 'effacer',
+            formatSubmit: 'yyyy/mm/dd'
+        })
+        $('.datepicker').pickadate();
+        // Material Select Initialization
+        $('.mdb-select').materialSelect();
+    </script>
+    <script type="text/javascript" src="js/addons/datatables.js"></script>
+</body>
+
+</html>
