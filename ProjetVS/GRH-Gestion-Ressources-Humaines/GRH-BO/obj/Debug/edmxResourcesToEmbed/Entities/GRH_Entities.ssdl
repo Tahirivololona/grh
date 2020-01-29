@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GRHModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ACCES">
+    <Key>
+      <PropertyRef Name="IDACCES" />
+    </Key>
+    <Property Name="IDACCES" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MENU" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AVANCEMENT">
+    <Key>
+      <PropertyRef Name="IDAVANCEMENT" />
+    </Key>
+    <Property Name="IDAVANCEMENT" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NUMAVANCEMENT" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AVERTISSEMENT">
+    <Key>
+      <PropertyRef Name="IDAVERTISSEMENT" />
+    </Key>
+    <Property Name="IDAVERTISSEMENT" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TYPEAVERTISSEMENT" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CONGE">
+    <Key>
+      <PropertyRef Name="IDCONGE" />
+    </Key>
+    <Property Name="IDCONGE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TYPECONGE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="JOURCONGE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CONTRAT">
+    <Key>
+      <PropertyRef Name="IDCONTRAT" />
+    </Key>
+    <Property Name="IDCONTRAT" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NUMCONTRAT" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DIPLOME">
+    <Key>
+      <PropertyRef Name="IDDIPLOME" />
+    </Key>
+    <Property Name="IDDIPLOME" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LIBELLEDIPLOME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PARCOURS" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="CATEGORIE" Type="int" Nullable="false" />
+    <Property Name="CORPS" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FORUM">
+    <Key>
+      <PropertyRef Name="IDFORUM" />
+    </Key>
+    <Property Name="IDFORUM" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MESSAGE" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GRADE">
+    <Key>
+      <PropertyRef Name="IDGRADE" />
+    </Key>
+    <Property Name="IDGRADE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSTATUT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ECHELON" Type="int" />
+    <Property Name="CLASSE" Type="int" />
+    <Property Name="INDICE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HISTORIQUE">
+    <Key>
+      <PropertyRef Name="IDHISTORIQUE" />
+    </Key>
+    <Property Name="IDHISTORIQUE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LIBELLEHISTORIQUE" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INTEGRATION">
+    <Key>
+      <PropertyRef Name="IDINTEGRATION" />
+    </Key>
+    <Property Name="IDINTEGRATION" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STATUTINTEGRATION" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOCALITE">
+    <Key>
+      <PropertyRef Name="IDLOCALITE" />
+    </Key>
+    <Property Name="IDLOCALITE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LOCALITE" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DIRECTION" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERSONNELS">
+    <Key>
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDPERSONNEL" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDSTATUT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDDIPLOME" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDRECLASSEMENT" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IDLOCALITE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDSERVICE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDRETRAITE" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IDINTEGRATION" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="NOM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PRENOM" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SEXE" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="DDN" Type="datetime" Nullable="false" />
+    <Property Name="MATRICULE" Type="varchar" MaxLength="50" />
+    <Property Name="NATIONALITE" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="CIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATECIN" Type="datetime" Nullable="false" />
+    <Property Name="LIEUCIN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DUPLICATACIN" Type="varchar" MaxLength="50" />
+    <Property Name="DATEDUPLICATA" Type="datetime" />
+    <Property Name="PHOTO" Type="image" />
+    <Property Name="DATEENTREE" Type="datetime" Nullable="false" />
+    <Property Name="DATERECLASSEMENT" Type="datetime" Nullable="false" />
+    <Property Name="DATEINTEGRATION" Type="datetime" Nullable="false" />
+    <Property Name="DATEAFFECTATION" Type="datetime" />
+  </EntityType>
+  <EntityType Name="PROFIL">
+    <Key>
+      <PropertyRef Name="IDPROFIL" />
+    </Key>
+    <Property Name="IDPROFIL" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="STATUTPROFIL" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_AVANCEMENT">
+    <Key>
+      <PropertyRef Name="IDAVANCEMENT" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDAVANCEMENT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEAVANCEMENT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_AVERTISSEMENT">
+    <Key>
+      <PropertyRef Name="IDPERSONNEL" />
+      <PropertyRef Name="IDAVERTISSEMENT" />
+    </Key>
+    <Property Name="IDPERSONNEL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDAVERTISSEMENT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEAVERTISSEMET" Type="datetime" Nullable="false" />
+    <Property Name="MOTIFAVERTISSEMENT" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_CONGE">
+    <Key>
+      <PropertyRef Name="IDCONGE" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDCONGE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEDEBCONGE" Type="datetime" Nullable="false" />
+    <Property Name="DATEFINCONGE" Type="datetime" Nullable="false" />
+    <Property Name="JOURSPRIS" Type="int" Nullable="false" />
+    <Property Name="MOTIF" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_CONTRAT">
+    <Key>
+      <PropertyRef Name="IDCONTRAT" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDCONTRAT" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="STATUTCONTRAT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DATECONTRAT" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PROFIL_ACCES">
+    <Key>
+      <PropertyRef Name="IDPROFIL" />
+      <PropertyRef Name="IDACCES" />
+    </Key>
+    <Property Name="IDPROFIL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDACCES" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_USER_FORUM">
+    <Key>
+      <PropertyRef Name="IDFORUM" />
+      <PropertyRef Name="IDUSER" />
+    </Key>
+    <Property Name="IDFORUM" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDUSER" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEEVOIE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_USER_HISTORIQUE">
+    <Key>
+      <PropertyRef Name="IDUSER" />
+      <PropertyRef Name="IDHISTORIQUE" />
+    </Key>
+    <Property Name="IDUSER" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDHISTORIQUE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEHISTORIQUE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RECLASSEMENT">
+    <Key>
+      <PropertyRef Name="IDRECLASSEMENT" />
+    </Key>
+    <Property Name="IDRECLASSEMENT" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DIPLOMEARECLASSER" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RETRAITE">
+    <Key>
+      <PropertyRef Name="IDRETRAITE" />
+    </Key>
+    <Property Name="IDRETRAITE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DATERETRAITE" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SERVICE">
+    <Key>
+      <PropertyRef Name="IDSERVICE" />
+    </Key>
+    <Property Name="IDSERVICE" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FONCTION" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STATUT">
+    <Key>
+      <PropertyRef Name="IDSTATUT" />
+    </Key>
+    <Property Name="IDSTATUT" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TYPESTATUT" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="IDUSER" />
+    </Key>
+    <Property Name="IDUSER" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDPROFIL" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LOGINUSER" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MDP" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="NOMUSER" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PRENOMUSER" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TELINSCRIPTION" Type="varchar" MaxLength="50" />
+    <Property Name="PHOTOUSER" Type="varchar" MaxLength="100" />
+    <Property Name="DATEPROFIL" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GRHModelStoreContainer">
+    <EntitySet Name="ACCES" EntityType="Self.ACCES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AVANCEMENT" EntityType="Self.AVANCEMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AVERTISSEMENT" EntityType="Self.AVERTISSEMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONGE" EntityType="Self.CONGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CONTRAT" EntityType="Self.CONTRAT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DIPLOME" EntityType="Self.DIPLOME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FORUM" EntityType="Self.FORUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GRADE" EntityType="Self.GRADE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HISTORIQUE" EntityType="Self.HISTORIQUE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="INTEGRATION" EntityType="Self.INTEGRATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOCALITE" EntityType="Self.LOCALITE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PERSONNELS" EntityType="Self.PERSONNELS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PROFIL" EntityType="Self.PROFIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_PERSO_AVANCEMENT" EntityType="Self.R_PERSO_AVANCEMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_PERSO_AVERTISSEMENT" EntityType="Self.R_PERSO_AVERTISSEMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_PERSO_CONGE" EntityType="Self.R_PERSO_CONGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_PERSO_CONTRAT" EntityType="Self.R_PERSO_CONTRAT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_PROFIL_ACCES" EntityType="Self.R_PROFIL_ACCES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_USER_FORUM" EntityType="Self.R_USER_FORUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="R_USER_HISTORIQUE" EntityType="Self.R_USER_HISTORIQUE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RECLASSEMENT" EntityType="Self.RECLASSEMENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RETRAITE" EntityType="Self.RETRAITE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SERVICE" EntityType="Self.SERVICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="STATUT" EntityType="Self.STATUT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GRHModelStoreContainer" CdmEntityContainer="GRHEntities">
+    <EntitySetMapping Name="ACCES">
+      <EntityTypeMapping TypeName="GRHModel.ACCES">
+        <MappingFragment StoreEntitySet="ACCES">
+          <ScalarProperty Name="IDACCES" ColumnName="IDACCES" />
+          <ScalarProperty Name="MENU" ColumnName="MENU" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AVANCEMENT">
+      <EntityTypeMapping TypeName="GRHModel.AVANCEMENT">
+        <MappingFragment StoreEntitySet="AVANCEMENT">
+          <ScalarProperty Name="IDAVANCEMENT" ColumnName="IDAVANCEMENT" />
+          <ScalarProperty Name="NUMAVANCEMENT" ColumnName="NUMAVANCEMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AVERTISSEMENT">
+      <EntityTypeMapping TypeName="GRHModel.AVERTISSEMENT">
+        <MappingFragment StoreEntitySet="AVERTISSEMENT">
+          <ScalarProperty Name="IDAVERTISSEMENT" ColumnName="IDAVERTISSEMENT" />
+          <ScalarProperty Name="TYPEAVERTISSEMENT" ColumnName="TYPEAVERTISSEMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONGE">
+      <EntityTypeMapping TypeName="GRHModel.CONGE">
+        <MappingFragment StoreEntitySet="CONGE">
+          <ScalarProperty Name="IDCONGE" ColumnName="IDCONGE" />
+          <ScalarProperty Name="TYPECONGE" ColumnName="TYPECONGE" />
+          <ScalarProperty Name="JOURCONGE" ColumnName="JOURCONGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRAT">
+      <EntityTypeMapping TypeName="GRHModel.CONTRAT">
+        <MappingFragment StoreEntitySet="CONTRAT">
+          <ScalarProperty Name="IDCONTRAT" ColumnName="IDCONTRAT" />
+          <ScalarProperty Name="NUMCONTRAT" ColumnName="NUMCONTRAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIPLOME">
+      <EntityTypeMapping TypeName="GRHModel.DIPLOME">
+        <MappingFragment StoreEntitySet="DIPLOME">
+          <ScalarProperty Name="IDDIPLOME" ColumnName="IDDIPLOME" />
+          <ScalarProperty Name="LIBELLEDIPLOME" ColumnName="LIBELLEDIPLOME" />
+          <ScalarProperty Name="PARCOURS" ColumnName="PARCOURS" />
+          <ScalarProperty Name="CATEGORIE" ColumnName="CATEGORIE" />
+          <ScalarProperty Name="CORPS" ColumnName="CORPS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FORUM">
+      <EntityTypeMapping TypeName="GRHModel.FORUM">
+        <MappingFragment StoreEntitySet="FORUM">
+          <ScalarProperty Name="IDFORUM" ColumnName="IDFORUM" />
+          <ScalarProperty Name="MESSAGE" ColumnName="MESSAGE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GRADE">
+      <EntityTypeMapping TypeName="GRHModel.GRADE">
+        <MappingFragment StoreEntitySet="GRADE">
+          <ScalarProperty Name="IDGRADE" ColumnName="IDGRADE" />
+          <ScalarProperty Name="IDSTATUT" ColumnName="IDSTATUT" />
+          <ScalarProperty Name="ECHELON" ColumnName="ECHELON" />
+          <ScalarProperty Name="CLASSE" ColumnName="CLASSE" />
+          <ScalarProperty Name="INDICE" ColumnName="INDICE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HISTORIQUE">
+      <EntityTypeMapping TypeName="GRHModel.HISTORIQUE">
+        <MappingFragment StoreEntitySet="HISTORIQUE">
+          <ScalarProperty Name="IDHISTORIQUE" ColumnName="IDHISTORIQUE" />
+          <ScalarProperty Name="LIBELLEHISTORIQUE" ColumnName="LIBELLEHISTORIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INTEGRATION">
+      <EntityTypeMapping TypeName="GRHModel.INTEGRATION">
+        <MappingFragment StoreEntitySet="INTEGRATION">
+          <ScalarProperty Name="IDINTEGRATION" ColumnName="IDINTEGRATION" />
+          <ScalarProperty Name="STATUTINTEGRATION" ColumnName="STATUTINTEGRATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOCALITE">
+      <EntityTypeMapping TypeName="GRHModel.LOCALITE">
+        <MappingFragment StoreEntitySet="LOCALITE">
+          <ScalarProperty Name="IDLOCALITE" ColumnName="IDLOCALITE" />
+          <ScalarProperty Name="LOCALITE1" ColumnName="LOCALITE" />
+          <ScalarProperty Name="DIRECTION" ColumnName="DIRECTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONNELS">
+      <EntityTypeMapping TypeName="GRHModel.PERSONNELS">
+        <MappingFragment StoreEntitySet="PERSONNELS">
+          <ScalarProperty Name="IDPERSONNEL" ColumnName="IDPERSONNEL" />
+          <ScalarProperty Name="IDSTATUT" ColumnName="IDSTATUT" />
+          <ScalarProperty Name="IDDIPLOME" ColumnName="IDDIPLOME" />
+          <ScalarProperty Name="IDRECLASSEMENT" ColumnName="IDRECLASSEMENT" />
+          <ScalarProperty Name="IDLOCALITE" ColumnName="IDLOCALITE" />
+          <ScalarProperty Name="IDSERVICE" ColumnName="IDSERVICE" />
+          <ScalarProperty Name="IDRETRAITE" ColumnName="IDRETRAITE" />
+          <ScalarProperty Name="IDINTEGRATION" ColumnName="IDINTEGRATION" />
+          <ScalarProperty Name="NOM" ColumnName="NOM" />
+          <ScalarProperty Name="PRENOM" ColumnName="PRENOM" />
+          <ScalarProperty Name="SEXE" ColumnName="SEXE" />
+          <ScalarProperty Name="DDN" ColumnName="DDN" />
+          <ScalarProperty Name="MATRICULE" ColumnName="MATRICULE" />
+          <ScalarProperty Name="NATIONALITE" ColumnName="NATIONALITE" />
+          <ScalarProperty Name="CIN" ColumnName="CIN" />
+          <ScalarProperty Name="DATECIN" ColumnName="DATECIN" />
+          <ScalarProperty Name="LIEUCIN" ColumnName="LIEUCIN" />
+          <ScalarProperty Name="DUPLICATACIN" ColumnName="DUPLICATACIN" />
+          <ScalarProperty Name="DATEDUPLICATA" ColumnName="DATEDUPLICATA" />
+          <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+          <ScalarProperty Name="DATEENTREE" ColumnName="DATEENTREE" />
+          <ScalarProperty Name="DATERECLASSEMENT" ColumnName="DATERECLASSEMENT" />
+          <ScalarProperty Name="DATEINTEGRATION" ColumnName="DATEINTEGRATION" />
+          <ScalarProperty Name="DATEAFFECTATION" ColumnName="DATEAFFECTATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROFIL">
+      <EntityTypeMapping TypeName="GRHModel.PROFIL">
+        <MappingFragment StoreEntitySet="PROFIL">
+          <ScalarProperty Name="IDPROFIL" ColumnName="IDPROFIL" />
+          <ScalarProperty Name="STATUTPROFIL" ColumnName="STATUTPROFIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_PERSO_AVANCEMENT">
+      <EntityTypeMapping TypeName="GRHModel.R_PERSO_AVANCEMENT">
+        <MappingFragment StoreEntitySet="R_PERSO_AVANCEMENT">
+          <ScalarProperty Name="IDAVANCEMENT" ColumnName="IDAVANCEMENT" />
+          <ScalarProperty Name="IDPERSONNEL" ColumnName="IDPERSONNEL" />
+          <ScalarProperty Name="DATEAVANCEMENT" ColumnName="DATEAVANCEMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_PERSO_AVERTISSEMENT">
+      <EntityTypeMapping TypeName="GRHModel.R_PERSO_AVERTISSEMENT">
+        <MappingFragment StoreEntitySet="R_PERSO_AVERTISSEMENT">
+          <ScalarProperty Name="IDPERSONNEL" ColumnName="IDPERSONNEL" />
+          <ScalarProperty Name="IDAVERTISSEMENT" ColumnName="IDAVERTISSEMENT" />
+          <ScalarProperty Name="DATEAVERTISSEMET" ColumnName="DATEAVERTISSEMET" />
+          <ScalarProperty Name="MOTIFAVERTISSEMENT" ColumnName="MOTIFAVERTISSEMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_PERSO_CONGE">
+      <EntityTypeMapping TypeName="GRHModel.R_PERSO_CONGE">
+        <MappingFragment StoreEntitySet="R_PERSO_CONGE">
+          <ScalarProperty Name="IDCONGE" ColumnName="IDCONGE" />
+          <ScalarProperty Name="IDPERSONNEL" ColumnName="IDPERSONNEL" />
+          <ScalarProperty Name="DATEDEBCONGE" ColumnName="DATEDEBCONGE" />
+          <ScalarProperty Name="DATEFINCONGE" ColumnName="DATEFINCONGE" />
+          <ScalarProperty Name="JOURSPRIS" ColumnName="JOURSPRIS" />
+          <ScalarProperty Name="MOTIF" ColumnName="MOTIF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_PERSO_CONTRAT">
+      <EntityTypeMapping TypeName="GRHModel.R_PERSO_CONTRAT">
+        <MappingFragment StoreEntitySet="R_PERSO_CONTRAT">
+          <ScalarProperty Name="IDCONTRAT" ColumnName="IDCONTRAT" />
+          <ScalarProperty Name="IDPERSONNEL" ColumnName="IDPERSONNEL" />
+          <ScalarProperty Name="STATUTCONTRAT" ColumnName="STATUTCONTRAT" />
+          <ScalarProperty Name="DATECONTRAT" ColumnName="DATECONTRAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_PROFIL_ACCES">
+      <EntityTypeMapping TypeName="GRHModel.R_PROFIL_ACCES">
+        <MappingFragment StoreEntitySet="R_PROFIL_ACCES">
+          <ScalarProperty Name="IDPROFIL" ColumnName="IDPROFIL" />
+          <ScalarProperty Name="IDACCES" ColumnName="IDACCES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_USER_FORUM">
+      <EntityTypeMapping TypeName="GRHModel.R_USER_FORUM">
+        <MappingFragment StoreEntitySet="R_USER_FORUM">
+          <ScalarProperty Name="IDFORUM" ColumnName="IDFORUM" />
+          <ScalarProperty Name="IDUSER" ColumnName="IDUSER" />
+          <ScalarProperty Name="DATEEVOIE" ColumnName="DATEEVOIE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="R_USER_HISTORIQUE">
+      <EntityTypeMapping TypeName="GRHModel.R_USER_HISTORIQUE">
+        <MappingFragment StoreEntitySet="R_USER_HISTORIQUE">
+          <ScalarProperty Name="IDUSER" ColumnName="IDUSER" />
+          <ScalarProperty Name="IDHISTORIQUE" ColumnName="IDHISTORIQUE" />
+          <ScalarProperty Name="DATEHISTORIQUE" ColumnName="DATEHISTORIQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RECLASSEMENT">
+      <EntityTypeMapping TypeName="GRHModel.RECLASSEMENT">
+        <MappingFragment StoreEntitySet="RECLASSEMENT">
+          <ScalarProperty Name="IDRECLASSEMENT" ColumnName="IDRECLASSEMENT" />
+          <ScalarProperty Name="DIPLOMEARECLASSER" ColumnName="DIPLOMEARECLASSER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RETRAITE">
+      <EntityTypeMapping TypeName="GRHModel.RETRAITE">
+        <MappingFragment StoreEntitySet="RETRAITE">
+          <ScalarProperty Name="IDRETRAITE" ColumnName="IDRETRAITE" />
+          <ScalarProperty Name="DATERETRAITE" ColumnName="DATERETRAITE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERVICE">
+      <EntityTypeMapping TypeName="GRHModel.SERVICE">
+        <MappingFragment StoreEntitySet="SERVICE">
+          <ScalarProperty Name="IDSERVICE" ColumnName="IDSERVICE" />
+          <ScalarProperty Name="FONCTION" ColumnName="FONCTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="STATUT">
+      <EntityTypeMapping TypeName="GRHModel.STATUT">
+        <MappingFragment StoreEntitySet="STATUT">
+          <ScalarProperty Name="IDSTATUT" ColumnName="IDSTATUT" />
+          <ScalarProperty Name="TYPESTATUT" ColumnName="TYPESTATUT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER">
+      <EntityTypeMapping TypeName="GRHModel.USER">
+        <MappingFragment StoreEntitySet="USER">
+          <ScalarProperty Name="IDUSER" ColumnName="IDUSER" />
+          <ScalarProperty Name="IDPROFIL" ColumnName="IDPROFIL" />
+          <ScalarProperty Name="LOGINUSER" ColumnName="LOGINUSER" />
+          <ScalarProperty Name="MDP" ColumnName="MDP" />
+          <ScalarProperty Name="NOMUSER" ColumnName="NOMUSER" />
+          <ScalarProperty Name="PRENOMUSER" ColumnName="PRENOMUSER" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="TELINSCRIPTION" ColumnName="TELINSCRIPTION" />
+          <ScalarProperty Name="PHOTOUSER" ColumnName="PHOTOUSER" />
+          <ScalarProperty Name="DATEPROFIL" ColumnName="DATEPROFIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

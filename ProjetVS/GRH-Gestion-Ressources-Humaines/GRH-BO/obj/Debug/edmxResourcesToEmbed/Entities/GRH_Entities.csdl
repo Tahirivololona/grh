@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GRHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ACCES">
+    <Key>
+      <PropertyRef Name="IDACCES" />
+    </Key>
+    <Property Name="IDACCES" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MENU" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AVANCEMENT">
+    <Key>
+      <PropertyRef Name="IDAVANCEMENT" />
+    </Key>
+    <Property Name="IDAVANCEMENT" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NUMAVANCEMENT" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AVERTISSEMENT">
+    <Key>
+      <PropertyRef Name="IDAVERTISSEMENT" />
+    </Key>
+    <Property Name="IDAVERTISSEMENT" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TYPEAVERTISSEMENT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CONGE">
+    <Key>
+      <PropertyRef Name="IDCONGE" />
+    </Key>
+    <Property Name="IDCONGE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TYPECONGE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="JOURCONGE" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CONTRAT">
+    <Key>
+      <PropertyRef Name="IDCONTRAT" />
+    </Key>
+    <Property Name="IDCONTRAT" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NUMCONTRAT" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DIPLOME">
+    <Key>
+      <PropertyRef Name="IDDIPLOME" />
+    </Key>
+    <Property Name="IDDIPLOME" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LIBELLEDIPLOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PARCOURS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CATEGORIE" Type="Int32" Nullable="false" />
+    <Property Name="CORPS" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FORUM">
+    <Key>
+      <PropertyRef Name="IDFORUM" />
+    </Key>
+    <Property Name="IDFORUM" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MESSAGE" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GRADE">
+    <Key>
+      <PropertyRef Name="IDGRADE" />
+    </Key>
+    <Property Name="IDGRADE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSTATUT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ECHELON" Type="Int32" />
+    <Property Name="CLASSE" Type="Int32" />
+    <Property Name="INDICE" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HISTORIQUE">
+    <Key>
+      <PropertyRef Name="IDHISTORIQUE" />
+    </Key>
+    <Property Name="IDHISTORIQUE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LIBELLEHISTORIQUE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="INTEGRATION">
+    <Key>
+      <PropertyRef Name="IDINTEGRATION" />
+    </Key>
+    <Property Name="IDINTEGRATION" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="STATUTINTEGRATION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOCALITE">
+    <Key>
+      <PropertyRef Name="IDLOCALITE" />
+    </Key>
+    <Property Name="IDLOCALITE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LOCALITE1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DIRECTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PERSONNELS">
+    <Key>
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDPERSONNEL" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDSTATUT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDDIPLOME" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDRECLASSEMENT" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IDLOCALITE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDSERVICE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDRETRAITE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IDINTEGRATION" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRENOM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SEXE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DDN" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MATRICULE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NATIONALITE" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATECIN" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LIEUCIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DUPLICATACIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DATEDUPLICATA" Type="DateTime" Precision="3" />
+    <Property Name="PHOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DATEENTREE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATERECLASSEMENT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATEINTEGRATION" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATEAFFECTATION" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PROFIL">
+    <Key>
+      <PropertyRef Name="IDPROFIL" />
+    </Key>
+    <Property Name="IDPROFIL" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="STATUTPROFIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_AVANCEMENT">
+    <Key>
+      <PropertyRef Name="IDAVANCEMENT" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDAVANCEMENT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEAVANCEMENT" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="R_PERSO_AVERTISSEMENT">
+    <Key>
+      <PropertyRef Name="IDPERSONNEL" />
+      <PropertyRef Name="IDAVERTISSEMENT" />
+    </Key>
+    <Property Name="IDPERSONNEL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDAVERTISSEMENT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEAVERTISSEMET" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MOTIFAVERTISSEMENT" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_CONGE">
+    <Key>
+      <PropertyRef Name="IDCONGE" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDCONGE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEDEBCONGE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DATEFINCONGE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="JOURSPRIS" Type="Int32" Nullable="false" />
+    <Property Name="MOTIF" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_PERSO_CONTRAT">
+    <Key>
+      <PropertyRef Name="IDCONTRAT" />
+      <PropertyRef Name="IDPERSONNEL" />
+    </Key>
+    <Property Name="IDCONTRAT" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDPERSONNEL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="STATUTCONTRAT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DATECONTRAT" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="R_PROFIL_ACCES">
+    <Key>
+      <PropertyRef Name="IDPROFIL" />
+      <PropertyRef Name="IDACCES" />
+    </Key>
+    <Property Name="IDPROFIL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDACCES" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="R_USER_FORUM">
+    <Key>
+      <PropertyRef Name="IDFORUM" />
+      <PropertyRef Name="IDUSER" />
+    </Key>
+    <Property Name="IDFORUM" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDUSER" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEEVOIE" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="R_USER_HISTORIQUE">
+    <Key>
+      <PropertyRef Name="IDUSER" />
+      <PropertyRef Name="IDHISTORIQUE" />
+    </Key>
+    <Property Name="IDUSER" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="IDHISTORIQUE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DATEHISTORIQUE" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="RECLASSEMENT">
+    <Key>
+      <PropertyRef Name="IDRECLASSEMENT" />
+    </Key>
+    <Property Name="IDRECLASSEMENT" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DIPLOMEARECLASSER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RETRAITE">
+    <Key>
+      <PropertyRef Name="IDRETRAITE" />
+    </Key>
+    <Property Name="IDRETRAITE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DATERETRAITE" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="SERVICE">
+    <Key>
+      <PropertyRef Name="IDSERVICE" />
+    </Key>
+    <Property Name="IDSERVICE" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FONCTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STATUT">
+    <Key>
+      <PropertyRef Name="IDSTATUT" />
+    </Key>
+    <Property Name="IDSTATUT" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TYPESTATUT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="IDUSER" />
+    </Key>
+    <Property Name="IDUSER" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDPROFIL" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="LOGINUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MDP" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOMUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PRENOMUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TELINSCRIPTION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PHOTOUSER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DATEPROFIL" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="GRHEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ACCES" EntityType="Self.ACCES" />
+    <EntitySet Name="AVANCEMENT" EntityType="Self.AVANCEMENT" />
+    <EntitySet Name="AVERTISSEMENT" EntityType="Self.AVERTISSEMENT" />
+    <EntitySet Name="CONGE" EntityType="Self.CONGE" />
+    <EntitySet Name="CONTRAT" EntityType="Self.CONTRAT" />
+    <EntitySet Name="DIPLOME" EntityType="Self.DIPLOME" />
+    <EntitySet Name="FORUM" EntityType="Self.FORUM" />
+    <EntitySet Name="GRADE" EntityType="Self.GRADE" />
+    <EntitySet Name="HISTORIQUE" EntityType="Self.HISTORIQUE" />
+    <EntitySet Name="INTEGRATION" EntityType="Self.INTEGRATION" />
+    <EntitySet Name="LOCALITE" EntityType="Self.LOCALITE" />
+    <EntitySet Name="PERSONNELS" EntityType="Self.PERSONNELS" />
+    <EntitySet Name="PROFIL" EntityType="Self.PROFIL" />
+    <EntitySet Name="R_PERSO_AVANCEMENT" EntityType="Self.R_PERSO_AVANCEMENT" />
+    <EntitySet Name="R_PERSO_AVERTISSEMENT" EntityType="Self.R_PERSO_AVERTISSEMENT" />
+    <EntitySet Name="R_PERSO_CONGE" EntityType="Self.R_PERSO_CONGE" />
+    <EntitySet Name="R_PERSO_CONTRAT" EntityType="Self.R_PERSO_CONTRAT" />
+    <EntitySet Name="R_PROFIL_ACCES" EntityType="Self.R_PROFIL_ACCES" />
+    <EntitySet Name="R_USER_FORUM" EntityType="Self.R_USER_FORUM" />
+    <EntitySet Name="R_USER_HISTORIQUE" EntityType="Self.R_USER_HISTORIQUE" />
+    <EntitySet Name="RECLASSEMENT" EntityType="Self.RECLASSEMENT" />
+    <EntitySet Name="RETRAITE" EntityType="Self.RETRAITE" />
+    <EntitySet Name="SERVICE" EntityType="Self.SERVICE" />
+    <EntitySet Name="STATUT" EntityType="Self.STATUT" />
+    <EntitySet Name="USER" EntityType="Self.USER" />
+  </EntityContainer>
+</Schema>

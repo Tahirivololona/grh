@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "css"
+		},
+		{
+			"path": "font"
+		},
+		{
+			"path": "img"
+		},
+		{
+			"path": "js"
+		},
+		{
+			"path": "mdb-addons"
+		},
+		{
+			"path": "scss"
+		}
+	]
+}

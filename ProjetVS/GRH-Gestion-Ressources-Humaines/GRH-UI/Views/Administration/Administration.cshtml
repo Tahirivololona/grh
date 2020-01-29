@@ -1,0 +1,258 @@
+﻿@model GRH_UI.Models.Administration.AdministrationViewModel
+@{
+    ViewBag.Title = "Administration";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<style>
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border-color: #2bbbad !important;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border-color: #2bbbad !important;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: transparent !important;
+    }
+</style>
+
+<div id="slide-out" class="side-nav left-navbar sn-bg-4 fixed">
+    <ul class="custom-scrollbar">
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li class="my-3"><a href="~/Administration/Administration" class=""><i class="lnr lnr-users fa-2x"></i> <span class="ml-2">Utilisateur</span></a></li>
+                <li class="my-3"><a href="~/Administration/AdminHistorique" class=""><i class="lnr lnr-book fa-2x"></i> <span class="ml-2">Historique</span></a></li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+    </ul>
+    <div class="sidenav-bg mask-strong"></div>
+</div>
+<main>
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-tabs  md-pills nav-justified" style="border-color: red;">
+                <li class="nav-item">
+                    <a class="nav-link active" id="create-tab" data-toggle="tab" href="#create" role="tab" aria-controls="create" aria-selected="true">Créer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="false">Rechercher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#import" role="tab" aria-controls="import" aria-selected="false">Importer</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content">
+                <div class="tab-pane active" id="create" role="tabpanel" aria-labelledby="create-tab">
+                    <div class="row">
+                        <!--Grid column-->
+                        <p style="color:red;">@ViewBag.ErrorMessage</p>
+                        <div class="col-md-12 mb-md-0 mb-5">
+                            <form id="adUserForm" method="post" action="~/Administration/AddUser" >
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="Nom" name="Nom" class="form-control">
+                                            <label for="name" class="">Nom</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-8">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="Prenom" name="Prenom" class="form-control">
+                                            <label for="last_name" class="">Prénom</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-user prefix grey-text"></i>
+                                            <input type="text" id="Login" name="Login" class="form-control">
+                                            <label for="login" class="">Login</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-key prefix grey-text"></i>
+                                            <input type="password" id="Password" name="Password" class="form-control">
+                                            <label for="password" class="">Mot de passe</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control">
+                                            <label for="confirm_password" class="">Confirmer mot de passe</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <!--Grid row-->
+                                <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-4">
+                                        <div class="md-form mb-0">
+                                            <i class="fa fa-envelope prefix grey-text"></i>
+                                            <input type="email" id="Email" name="Email" class="form-control">
+                                            <label for="email" class="">Email</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-8">
+                                        <div class="md-form mb-0">
+                                            <i class="fas fa-phone prefix grey-text"></i>
+                                            <input type="text" onkeypress="return isNumberKey(event)" maxlength="10" id="Telephone" name="Telephone" class="form-control">
+                                            <label for="phone" class="">Téléphone</label>
+                                        </div>
+                                    </div>
+                                    <!--Grid column-->
+                                </div>
+                                <!--Grid row-->
+                                <div class="row justify-content-center">
+                                    <!--Grid column-->
+                                    <div class="col-md-4  ">
+                                        <select class="mdb-select md-form mb-0" name="Profil" id="Profil" searchable="Rechercher Ici">
+                                            <option value="" disabled selected>Profile</option>
+                                            @foreach (var profil in Model.ListProfil)
+                                            {
+                                                <option value="@profil.IDPROFIL">@profil.STATUTPROFIL</option>
+                                            }  
+                                        </select>
+                                        <label class="mdb-main-label"> <i class="fas fa-user-tie fa-lg prefix grey-text mr-2"> </i>Profile</label>
+                                    </div>
+                                    <!--Grid column-->
+                                    <!--Grid column-->
+                                    <div class="col-md-8">
+
+                                        <select class="mdb-select colorful-select dropdown-primary md-form" name="AccesMenu" id="AccesMenu" multiple searchable="Selectionner menu..">
+                                            <option value="" disabled selected>Choisir son droit d'accès</option>
+                                            @foreach (var acces in Model.ListAcces)
+                                            {
+                                                <option value="@acces.IDACCES">@acces.MENU</option>
+                                            }
+                                        </select>
+                                        <label class="mdb-main-label"><i class="fas fa-bars prefix grey-text mr-3"></i>Accès menu</label>
+                                        <button class="btn-save btn btn-primary btn-sm">Accepter</button>
+
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+                                <div class="text-center d-flex justify-content-end text-md-left">
+                                    <button class="btn btn-primary btn-rounded" type="submit">Confirmer</button>
+                                </div>
+                            </form>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="research" role="tabpanel" aria-labelledby="profile-tab">
+                    <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="th-sm">
+                                    NOM
+                                </th>
+                                <th class="th-sm">
+                                    PRENOMS
+                                </th>
+                                <th class="th-sm">
+                                    PROFILE
+                                </th>
+                                <th class="th-sm">
+                                    ACTION BOUTON
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model.ListUser)
+                            {
+                                <tr>
+                                    <td>@user.Nom</td>
+                                    <td>@user.Prenom</td>
+                                    <td>@user.ProfilLabel</td>
+                                    <td>
+                                        <span class="table-remove"><a href="adminprofile.html" class="btn-floating btn-sm btn-danger"><i class="fas fa-eye"></i></a></span>
+                                        <span class="table-remove"><a href="adminmodifprofile.html" class="btn-floating btn-sm btn-danger"><i class="fas fa-edit"></i></a></span>
+                                        <span class="table-remove"><a href="~/Administration/DeleteUser/@user.Id" class="btn-floating btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a></span>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="tab-pane" id="import" role="tabpanel" aria-labelledby="messages-tab">
+                    <form id="import" class="md-form">
+                        <div class="file-field big">
+                            <a class="btn-floating btn-lg pink lighten-1 mt-0 float-left">
+                                <i class="fas fa-paperclip" aria-hidden="true"></i>
+                                <input type="file" multiple>
+                            </a>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Importer un ou plusieurs fichier">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center d-flex justify-content-end text-md-left">
+                        <a class="btn btn-primary btn-rounded" onclick="document.getElementById('import').submit();">Enregistrer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        };
+        $(document).ready(function() {
+            // Material Select Initialization
+            $('.mdb-select').materialSelect();
+            // Datatable Initialization
+            $('#dtBasicExample').DataTable();
+            $('.dataTables_length').addClass('bs-select');
+            $('.button-collapse').sideNav({
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: false, // Closes side-nav on &lt;a&gt; clicks, useful for Angular/Meteor
+                breakpoint: 1440, // Breakpoint for button collapse
+                menuWidth: 240, // Width for sidenav
+                timeDurationOpen: 300, // Time duration open menu
+                timeDurationClose: 200, // Time duration open menu
+                timeDurationOverlayOpen: 50, // Time duration open overlay
+                timeDurationOverlayClose: 200, // Time duration close overlay
+                easingOpen: 'easeOutQuad', // Open animation
+                easingClose: 'easeOutCubic', // Close animation
+                showOverlay: true, // Display overflay
+                showCloseButton: false // Append close button into siednav
+            });
+        });
+</script>

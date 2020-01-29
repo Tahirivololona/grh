@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "AdminHistorique";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<div id="slide-out" class="side-nav left-navbar sn-bg-4 fixed">
+    <ul class="custom-scrollbar">
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li class="my-3"><a href="~/Administration/Administration" class=""><i class="lnr lnr-users fa-2x"></i> <span class="ml-2">Utilisateur</span></a></li>
+                <li class="my-3"><a href="~/Administration/AdminHistorique" class=""><i class="lnr lnr-book fa-2x"></i> <span class="ml-2">Historique</span></a></li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+    </ul>
+    <div class="sidenav-bg mask-strong"></div>
+</div>
+<main>
+    <div class="card mb-5">
+        <div class="card-header">
+            Historique des utilisateurs
+        </div>
+        <div class="card-body">
+            <div class="tab-pane" id="research" role="tabpanel" aria-labelledby="profile-tab">
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th class="th-sm">
+                                LOGIN
+                            </th>
+                            <th class="th-sm">
+                                NOM
+                            </th>
+                            <th class="th-sm">
+                                MENU
+                            </th>
+                            <th class="th-sm">
+                                VISITE
+                            </th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+        // Data Picker Initialization
+        $.extend($.fn.pickadate.defaults, {
+            monthsFull: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre',
+                'Novembre', 'Décembre'
+            ],
+            weekdaysShort: ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'],
+            today: 'aujourd\'hui',
+            clear: 'effacer',
+            formatSubmit: 'yyyy/mm/dd'
+        })
+        $('.datepicker').pickadate();
+        // Material Select Initialization
+        $('.mdb-select').materialSelect();
+        $('#dtBasicExample').DataTable();
+        $('.dataTables_length').addClass('bs-select');
+</script>
