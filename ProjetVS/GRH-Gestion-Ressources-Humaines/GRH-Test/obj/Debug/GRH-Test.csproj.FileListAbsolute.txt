@@ -18,3 +18,13 @@ D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-T
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.csprojResolveAssemblyReference.cache
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.exe
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\GRH-Test.exe.config
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\GRH-Test.exe
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\GRH-Test.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\GRH-BO.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\EntityFramework.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\GRH-BO.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\bin\Debug\EntityFramework.xml
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.csprojResolveAssemblyReference.cache
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.exe
+D:\GRH-Gestion-Ressources-Humaines\GRH-Test\obj\Debug\GRH-Test.pdb

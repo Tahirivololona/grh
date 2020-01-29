@@ -8,7 +8,6 @@ namespace GRH_UI
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
         }
     }
 }

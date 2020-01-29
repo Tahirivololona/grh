@@ -20,3 +20,14 @@ D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-B
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.csprojResolveAssemblyReference.cache
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.dll
 D:\Outils\STAGE-Tahiry\DevGRH\grh\ProjetVS\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\GRH-BS.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\GRH-BS.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\EntityFramework.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\EntityFramework.SqlServer.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\GRH-BO.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\GRH-BO.pdb
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\EntityFramework.xml
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\bin\Debug\EntityFramework.SqlServer.xml
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.csprojResolveAssemblyReference.cache
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.dll
+D:\GRH-Gestion-Ressources-Humaines\GRH-BS\obj\Debug\GRH-BS.pdb
